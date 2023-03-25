@@ -1,0 +1,7 @@
+!!python/object:argparse.Namespace
+cost: 1
+game: PD
+grid_length: 20
+init_coop: 0.8
+project: mixed_init_08_benefit_10
+rounds: 20

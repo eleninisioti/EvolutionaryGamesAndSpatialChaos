@@ -1,0 +1,4 @@
+
+python simulate.py --project dynamic/low_density/bifurc_pm0.5_trials --grid_length 50 --init_coop 0.8 --rounds 1000 --cost 0 --radius 1  --nagents 600 --trials 1 --prob_move 0.5 --bifurcation --day_duration 25 --night_duration 50 --trials 5
+
+python simulate.py --project dynamic/low_density/bifurc_pm0.5_onlyday_trials --grid_length 50 --init_coop 0.8 --rounds 1000 --cost 0 --radius 1 --nagents 600 --trials 5 --prob_move 0.5 --bifurcation --day_duration 25 --night_duration 0 --trials 5
