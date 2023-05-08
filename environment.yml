@@ -1,0 +1,6 @@
+name: EvotionaryGamesAndSpatialChaos
+channels:
+  - defaults
+dependencies:
+  - python=3.8
+prefix: /Users/eleninisioti/opt/anaconda3/envs/EvotionaryGamesAndSpatialChaos

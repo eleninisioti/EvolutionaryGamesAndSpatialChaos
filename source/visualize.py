@@ -1,6 +1,5 @@
 import matplotlib.pyplot as plt
 import numpy as np
-import matplotlib
 import seaborn as sns
 
 colors = {0: np.array([0, 0, 255]), 1: np.array([255, 0, 0]), 2: np.array([0, 255, 0]), 3:
