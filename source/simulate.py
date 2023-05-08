@@ -41,8 +41,16 @@ def main(args):
         pickle.dump(log_perf, pfile, protocol=pickle.HIGHEST_PROTOCOL)
 
     # make gif from plots
+    import re
+
+    _nsre = re.compile('([0-9]+)')
+
+    def natural_sort_key(s):
+        return [int(text) if text.isdigit() else text.lower()
+                for text in re.split(_nsre, s)]
+
     filenames = next(walk("../projects/" + args.project + "/plots/grids"), (None, None, []))[2]  # [] if no file
-    filenames.sort()
+    filenames.sort(key=natural_sort_key)
     with imageio.get_writer("../projects/" + args.project + '/movie.gif', mode='I') as writer:
         for filename in filenames:
             image = imageio.imread("../projects/" + args.project + "/plots/grids/" + filename)
